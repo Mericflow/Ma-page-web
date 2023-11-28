@@ -1,0 +1,247 @@
+/* Importation des polices Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Noto+Sans:wght@300&family=Poppins:wght@300&family=Vina+Sans&display=swap');
+
+/* Media Queries pour différents types d'écrans */
+@media only screen and (max-width: 767px) {
+    /* Styles pour les petits écrans ici */
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Styles pour les tablettes ici */
+}
+
+@media only screen and (min-width: 1024px) {
+    /* Styles pour les grands écrans (ordinateurs de bureau) ici */
+}
+
+/* Réinitialisation des marges et des rembourrages */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles généraux du corps de la page */
+body {
+    font-family: 'Inter', sans-serif;
+    background: #000000;
+    font-size: 16px;
+}
+
+/* Styles pour la section du slider */
+.slider {
+    width: 100%;
+    min-height: 80vh;
+    aspect-ratio: 16/9;
+    background: #000000;
+    position: relative;
+}
+
+.slider-background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(70%);
+}
+
+.slider-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* Styles pour les titres et paragraphes */
+h1 {
+    color: #fff;
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+p {
+    font-size: 2rem;
+    line-height: 1.5em;
+    color: white;
+}
+
+/* Animation de clignotement */
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+.blinking-text {
+    animation: blink 5s infinite;
+}
+
+/* Styles pour les sections */
+.section {
+    padding: 100px 0;
+}
+
+/* Styles pour les boîtes */
+.box {
+    max-width: 1280px;
+    margin-inline: auto;
+}
+
+/* Styles pour les conteneurs flexibles */
+.flex {
+    display: flex;
+}
+
+/* Styles pour le fond sombre */
+.dark {
+   background: linear-gradient(90deg, #0700b8 0%, #00ff88 100%);
+    color: #fff;
+}
+
+/* Styles pour la largeur des éléments */
+.w40 {
+    width: 40%;
+    color: white;
+}
+
+.w60 {
+    width: 60%;
+}
+
+/* Styles pour le centrage du texte */
+.text-center {
+    text-align: center;
+}
+
+/* Styles pour les marges entre les éléments */
+.gap20 {
+    gap: 20px;
+}
+
+/* Styles pour la largeur des éléments */
+.w32 {
+    width: 32%;
+}
+
+/* Styles pour l'espacement entre les éléments */
+.space-between {
+    justify-content: space-between;
+}
+
+/* Styles pour la section des compétences */
+.competences {
+    background: #a92f2f;
+    border-radius: 15px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.competences img {
+    width: 100px;
+    height: 100%;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+}
+
+.competences h3 {
+    color: #fff;
+    margin-top: 10px;
+}
+
+/* Styles pour la section des réalisations */
+.realisations {
+    height: auto;
+    aspect-ratio: 1/1;
+    position: relative;
+}
+
+.realisations h3 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    width: max-content;
+    opacity: 0;
+}
+
+.realisations {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.realisations img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Styles pour l'espacement entre les éléments */
+.gap32 {
+    margin: 20px;
+}
+
+/* Styles pour la section du pied de page */
+.footer {
+    text-align: center;
+}
+
+/* Styles pour la section de contact */
+.contact {
+    text-align: center;
+    padding-right: 40rem;
+}
+
+/* Styles pour la barre de navigation */
+.nav {
+    background: linear-gradient(90deg, #0700b8 0%, #00ff88 100%);
+    padding: 15px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 2em;
+}
+
+/* Styles pour la liste de navigation */
+ul {
+    list-style: none;
+    display: flex;
+    padding: 2rem;
+}
+
+/* Styles pour les éléments de liste de navigation */
+li {
+    margin: 0 15px;
+    list-style: none;
+}
+
+/* Styles pour les liens de navigation */
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+/* Styles pour les liens de navigation au survol */
+a:hover {
+    text-decoration: underline;
+}
+
+/* Styles pour le conteneur du logo */
+.logo-container {
+    margin-right: auto; /* Pousse les éléments à droite autant que possible */
+}
+
+/* Styles pour la taille maximale du logo */
+.logo {
+    max-height: 40px;
+    border-radius: 2rem;
+}
+
